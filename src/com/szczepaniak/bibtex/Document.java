@@ -41,7 +41,8 @@ public class Document {
     @Override
     public String toString() {
         for (Entry entry : fileEntries) {
-            System.out.println(entry);
+//            System.out.println(entry);
+            Format.printEntry(entry);
         }
 
         return "";

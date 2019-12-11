@@ -13,4 +13,12 @@ public class Field {
     public String toString() {
         return " " + key + " | " + raw;
     }
+
+    public String getKey() {
+        return key;
+    }
+
+    public String getRaw() {
+        return raw;
+    }
 }
