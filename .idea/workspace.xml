@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce13a1a3-b4b8-440a-846b-9e19674e307b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/SpecificEntries.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xampl.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Document.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Format.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java" afterDir="false" />
     </list>
@@ -17,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="151">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -217,7 +221,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576165553792" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576166042584" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -272,15 +276,16 @@
       <workItem from="1575645102482" duration="8788000" />
       <workItem from="1575838990129" duration="5275000" />
       <workItem from="1575983246488" duration="22673000" />
-      <workItem from="1576163439018" duration="2112000" />
+      <workItem from="1576163439018" duration="2511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38848000" />
+    <option name="totallyTimeSpent" value="39247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="792" y="-8" width="816" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28703704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -291,7 +296,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3243607" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3243607" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39838493" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,7 +304,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3270525" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3270525" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3270525" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -422,16 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xampl.bib">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -441,8 +436,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="151">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

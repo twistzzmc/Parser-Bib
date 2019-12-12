@@ -18,3 +18,9 @@ public class Main {
 //            Format.printEntry(entry);
     }
 }
+
+/* TODO
+*  -command line
+*  -better table for printing
+*  -string handling if it's bigger than one line
+*/
