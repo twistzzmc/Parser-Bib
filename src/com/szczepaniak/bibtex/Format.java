@@ -36,29 +36,49 @@ public class Format {
 
         keyLength += 1;
         valueLength += 1;
+        int totalLength = keyLength + valueLength + 3;
 
-        System.out.println(entry.getEntryType() + " (" + entry.getCitationKey() + ")");
+        StringBuilder top = new StringBuilder(), middle = new StringBuilder(), bottom = new StringBuilder();
+        top.append('╔');
+        middle.append('║');
+        bottom.append('╚');
+        for (int i = 1; i <= totalLength; i++) {
+            top.append('═');
+            middle.append('═');
+            bottom.append('═');
+        }
+        top.append('╗');
+        middle.append('║');
+        bottom.append('╝');
+
+
+        System.out.println(top);
+
+        String entryName = "║" + String.format("%-" + totalLength + "s", entry.getEntryType() + " (" + entry.getCitationKey() + ")") + "║";
+        System.out.println(entryName);
+
+        System.out.println(middle);
 
         printAuthors(authorsNumber, authorsNames, keyLength, valueLength, "author");
         printAuthors(editorsNumber, editorsNames, keyLength, valueLength, "editor");
 
         for (Field field : entry.getFields()) {
-            String fieldKey = String.format(" %-" + keyLength + "s", field.getKey()) + "|";
-            String fieldRaw = String.format(" %-" + valueLength + "s", field.getRaw()) + "|";
+            String fieldKey = String.format("║ %-" + keyLength + "s", field.getKey()) + "│";
+            String fieldRaw = String.format(" %-" + valueLength + "s", field.getRaw()) + "║";
             System.out.println(fieldKey + fieldRaw);
         }
-        System.out.println();
+        System.out.println(bottom + "\n");
     }
 
     private static void printAuthors(int count, ArrayList<String> authors, int keyLength, int valueLength, String authorType) {
         if (count > 0) {
-            String type = String.format(" %-" + keyLength + "s", authorType) + "|";
-            type += String.format(" • %-" + (valueLength - 2) + "s", authors.remove(0)) + "|";
+            String type = String.format("║ %-" + keyLength + "s", authorType) + "│";
+            type += String.format(" • %-" + (valueLength - 2) + "s", authors.remove(0)) + "║";
 
             System.out.println(type);
             for (String authorName : authors) {
-                String authorString = String.format("  %" + keyLength + "s", "|");
-                authorString += String.format(" • %-" + (valueLength - 2) + "s", authorName) + "|";
+                String authorString = String.format("║  %" + keyLength + "s", "│");
+                authorString += String.format(" • %-" + (valueLength - 2) + "s", authorName) + "║";
                 System.out.println(authorString);
             }
         }

@@ -31,10 +31,24 @@ class Parser {
     }
 
     static void getString(int start, List<String> fileContents) {
-        String string = fileContents.get(start);
-        String stringKey = string.substring(string.indexOf("{") + 1, string.indexOf("=")-1).trim();
-        String stringValue = string.substring(string.indexOf("=") + 3, string.length() - 2).trim();
-        Parser.strings.add(new Strings(stringKey, stringValue));
+        if (fileContents.get(start).charAt(fileContents.get(start).length() - 1) == '}') {
+            addString(fileContents.get(start).substring(8, fileContents.get(start).length() - 2));
+        }
+        else {
+            for (int i = start + 1; !fileContents.get(i).equals("}"); i++) {
+                addString(fileContents.get(i));
+            }
+        }
+    }
+
+    private static void addString(String line) {
+        String key = line.substring(0, line.indexOf('=')).trim();
+        String value = line.substring(line.indexOf('=') + 1, line.length() - 1);
+
+        value = value.replaceAll(",", "");
+        value = value.replaceAll("\"", "").trim();
+
+        Parser.strings.add(new Strings(key, value));
     }
 
     static ArrayList getLines(int start, int end, List<String> allLines) {

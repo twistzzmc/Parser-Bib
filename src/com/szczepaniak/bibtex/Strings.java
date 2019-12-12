@@ -16,4 +16,9 @@ public class Strings {
     public String getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return key + "  " + value;
+    }
 }
