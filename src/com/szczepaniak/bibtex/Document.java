@@ -47,4 +47,8 @@ public class Document {
 
         return "";
     }
+
+    public ArrayList<Entry> getFileEntries() {
+        return fileEntries;
+    }
 }

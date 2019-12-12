@@ -3,6 +3,7 @@ package com.szczepaniak.bibtex;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -12,5 +13,8 @@ public class Main {
         Document document = new Document(path);
 
         System.out.println(document);
+//        ArrayList<Entry> entries = SpecificEntries.getSpecificEntryTypes("INBOOK", document);
+//        for (Entry entry : entries)
+//            Format.printEntry(entry);
     }
 }
