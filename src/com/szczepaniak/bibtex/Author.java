@@ -3,6 +3,8 @@ package com.szczepaniak.bibtex;
 public class Author {
     private String authorType;
     private String name;
+    private String firstName;
+    private String lastName;
 
     public Author(String name, String authorType) {
         this.name = name;
@@ -15,6 +17,14 @@ public class Author {
 
     public String getName() {
         return name;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     @Override

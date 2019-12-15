@@ -51,4 +51,8 @@ public class Document {
     public ArrayList<Entry> getFileEntries() {
         return fileEntries;
     }
+
+    public void setFileEntries(ArrayList<Entry> fileEntries) {
+        this.fileEntries = fileEntries;
+    }
 }

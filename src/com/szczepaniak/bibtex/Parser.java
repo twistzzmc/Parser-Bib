@@ -100,16 +100,13 @@ class Parser {
                 String line = entry.get(start), fieldRaw = "";
                 if (line.contains("=")) {
                     String fieldKey = line.substring(3, line.indexOf("=") - 1);
-//                    System.out.println(fieldKey);
 
                     if (line.endsWith(",")) {
                         fieldRaw = line.substring(line.indexOf("=") + 2, line.length() - 1).trim();
-//                        System.out.println(fieldRaw);
                     }
                     else {
                         fieldRaw = line.substring(line.indexOf("=") + 2);
                         fieldRaw += entry.get(start + 1).trim();
-//                        System.out.println(fieldRaw);
                     }
 
                     if (!fieldKey.equals("author") && !fieldKey.equals("editor")) {

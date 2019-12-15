@@ -55,6 +55,14 @@ public class Main implements Runnable{
     public void run() {
         Document document = new Document(path);
 
+        for (String author : authors) {
+            document.setFileEntries(SpecificEntries.getAuthorEntries(author, document));
+        }
+
+        for (String type : types) {
+            document.setFileEntries(SpecificEntries.getSpecificEntryTypes(type, document));
+        }
+
         System.out.println(document);
     }
 }
@@ -64,7 +72,7 @@ public class Main implements Runnable{
 *  -cleaning the code
 *  -add errors
 *  -add tests
-*  -proper filtering
+*  -proper filtering => done (i think xd)
 *  -command line => mostly done
 *  -better table for printing => done
 *  -string handling if it's bigger than one line => done

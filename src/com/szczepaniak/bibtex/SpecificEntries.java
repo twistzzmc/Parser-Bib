@@ -1,5 +1,6 @@
 package com.szczepaniak.bibtex;
 
+import java.text.Normalizer;
 import java.util.ArrayList;
 
 public class SpecificEntries {
