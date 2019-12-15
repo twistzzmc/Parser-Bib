@@ -1,25 +1,20 @@
 package com.szczepaniak.bibtex;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 
 public class FieldNames {
-    private String name1;
-    private String name2;
-    private boolean optional;
+    private LinkedHashSet<FieldName> compulsoryFieldNames = new LinkedHashSet<>();
+    private LinkedHashSet<FieldName> optionalFieldNames = new LinkedHashSet<>();
+    private int compulsoryFieldNamesCount;
+    private int optionalFieldNamesCount;
 
-    public FieldNames(String name, boolean optional) {
-        this.name1 = name;
-        this.name2 = null;
-        this.optional = optional;
+    public FieldNames(String type) {
+        createFieldNames(type);
     }
 
-    public FieldNames(String name1, String name2, boolean optional) {
-        this.name1 = name1;
-        this.name2 = name2;
-        this.optional = optional;
-    }
-
-    public static ArrayList<FieldNames> createFieldNames(String type) {
+    private void createFieldNames(String type) {
         String compulsory = "", optional = "";
         switch (type) {
             case "ARTICLE":
@@ -78,41 +73,60 @@ public class FieldNames {
 
         }
 
-        return putInArray(optional, compulsory);
+        putInArray(optional, compulsory);
     }
 
-    private static ArrayList<FieldNames> putInArray(String optional, String compulsory) {
-        ArrayList<FieldNames> fieldNames = new ArrayList<>();
-
+    private void putInArray(String optional, String compulsory) {
+        compulsoryFieldNamesCount = compulsory.split(", ").length;
         for (String comp : compulsory.split(", ")) {
             if (comp.length() > 0)
-                fieldNames.add(newFieldName(comp, false));
+                compulsoryFieldNames.add(newFieldName(comp, false));
         }
 
+        optionalFieldNamesCount = optional.split(", ").length;
         for (String opt : optional.split(", ")) {
             if (opt.length() > 0)
-                fieldNames.add(newFieldName(opt, true));
+                optionalFieldNames.add(newFieldName(opt, true));
         }
-
-        return fieldNames;
     }
 
-    private static FieldNames newFieldName(String name, boolean optional) {
+    private static FieldName newFieldName(String name, boolean optional) {
         if (!name.contains("|")) {
-            return new FieldNames(name, optional);
+            return new FieldName(name, optional);
         }
         else {
-            return new FieldNames(name.substring(0, name.indexOf("|")), name.substring(name.indexOf("|") + 1), optional);
+            return new FieldName(name.substring(0, name.indexOf("|")), name.substring(name.indexOf("|") + 1), optional);
         }
+    }
+
+    public int getCompulsoryFieldNamesCount() {
+        return compulsoryFieldNamesCount;
+    }
+
+    public int getOptionalFieldNamesCount() {
+        return optionalFieldNamesCount;
+    }
+
+    public LinkedHashSet<FieldName> getCompulsoryFieldNames() {
+        return compulsoryFieldNames;
+    }
+
+    public LinkedHashSet<FieldName> getOptionalFieldNames() {
+        return optionalFieldNames;
     }
 
     @Override
     public String toString() {
-        if (name2 == null) {
-            return (name1 + " " + optional);
+        System.out.println("Compulsory count: " + compulsoryFieldNamesCount);
+        for (FieldName fieldName : compulsoryFieldNames) {
+            System.out.println(fieldName);
         }
-        else {
-            return (name1 + "|" + name2 + " " + optional);
+
+        System.out.println("Optional count: " + optionalFieldNamesCount);
+        for (FieldName fieldName : optionalFieldNames) {
+            System.out.println(fieldName);
         }
+
+        return "";
     }
 }

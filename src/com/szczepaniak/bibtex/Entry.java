@@ -18,22 +18,20 @@ public class Entry {
         this.entryRaw = new ArrayList<>();
         this.fields = new ArrayList<>();
 
-//        getLines(allLines);
-
         entryRaw = Parser.getLines(startIndex, endIndex, allLines);
         entryType = Parser.getEntryType(entryRaw);
         citationKey = Parser.getCitationKey(entryRaw);
         fields = Parser.getFields(entryRaw);
         this.createAuthors();
+
+        checkEntry();
     }
 
     private void createAuthors() {
         for (int i = 0; !entryRaw.get(i).equals("}"); i++) {
             String line = entryRaw.get(i);
-//            System.out.println("\n" + line);
             if (line.contains("=")) {
                 String field = line.substring(0, line.indexOf("=")).trim();
-//                System.out.println(field);
 
                 if (field.equals("author") || field.equals("editor")) {
                     String newLine = line.substring(line.indexOf("=") + 3, line.indexOf(",") - 1).trim();
@@ -86,5 +84,13 @@ public class Entry {
 
     public LinkedHashMap<String, Author> getAuthors() {
         return authors;
+    }
+
+    private void checkEntry() {
+        int countedCompulsoryFields = 0;
+        Types types = new Types();
+
+//        System.out.println(types);
+        System.out.println(types.entryTypes.get(entryType).getCompulsoryFieldNames().contains(new FieldName("author", true)));
     }
 }

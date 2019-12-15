@@ -14,7 +14,6 @@ public class Document {
     public Document(String path) {
         this.loadFile(path);
         fileEntries = Parser.getEntries(fileContents);
-//        this.parse();
     }
 
     private void loadFile(String path) {
@@ -25,23 +24,9 @@ public class Document {
         }
     }
 
-//    public void parse() {
-//        int start = -1, end;
-//        for (int i = 0; i < fileContents.size(); i++) {
-//            if (!fileContents.get(i).isEmpty() && fileContents.get(i).charAt(0) == '@') {
-//                if (start != -1) {
-//                    end = i - 2;
-//                    fileEntries.add(new Entry(start, end, fileContents));
-//                }
-//                start = i;
-//            }
-//        }
-//    }
-
     @Override
     public String toString() {
         for (Entry entry : fileEntries) {
-//            System.out.println(entry);
             Format.printEntry(entry);
         }
 

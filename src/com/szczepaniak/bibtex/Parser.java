@@ -1,8 +1,6 @@
 package com.szczepaniak.bibtex;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
 import java.util.List;
 
 class Parser {
@@ -66,7 +64,6 @@ class Parser {
 
         for (int i = 0; i < firstLine.length(); i++) {
             if (firstLine.charAt(i) == '{') {
-//                System.out.println(firstLine.substring(1, i));
                 return firstLine.substring(1, i);
             }
         }
