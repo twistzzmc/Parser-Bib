@@ -8,7 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Document {
+    // List containing lines of the whole document
     private List<String> fileContents;
+
+    // List containing every entry
     private ArrayList<Entry> fileEntries;
 
     public Document(String path) {
@@ -16,6 +19,7 @@ public class Document {
         fileEntries = Parser.getEntries(fileContents);
     }
 
+    // Reading the file and putting it in fileContents
     private void loadFile(String path) {
         try {
             fileContents = Files.readAllLines(Paths.get(path));

@@ -48,16 +48,22 @@ public class Main implements Runnable{
 
     @Override
     public void run() {
+        // Creating new document
         Document document = new Document(path);
 
+        // If there are specific authors to look for filter the wrong ones
+        // TODO if -a or --author is given with no argument return exception
         for (String author : authors) {
             document.setFileEntries(SpecificEntries.getAuthorEntries(author, document));
         }
 
+        // If there are specific entry types to look for filter the wrong ones
+        // TODO if -t or --type is given with no argument return exceotion
         for (String type : types) {
             document.setFileEntries(SpecificEntries.getSpecificEntryTypes(type, document));
         }
 
+        //printing the filtered document
         System.out.println(document);
     }
 }
@@ -72,3 +78,5 @@ public class Main implements Runnable{
 *  -better table for printing => done
 *  -string handling if it's bigger than one line => done
 */
+
+//--path "C:\\Users\\Michal\\IdeaProjects\\szczepaniak_bibtex\\xampl.bib"

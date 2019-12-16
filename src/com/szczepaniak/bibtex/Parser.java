@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Parser {
-    static ArrayList<Strings> strings = new ArrayList<>();
+    // List containing all the found "@STRING" declarations
+    private static ArrayList<Strings> strings = new ArrayList<>();
 
     static ArrayList<Entry> getEntries(List<String> fileContents) {
         ArrayList<Entry> fileEntries = new ArrayList<>();
@@ -28,7 +29,7 @@ class Parser {
         return fileEntries;
     }
 
-    static void getString(int start, List<String> fileContents) {
+    private static void getString(int start, List<String> fileContents) {
         if (fileContents.get(start).charAt(fileContents.get(start).length() - 1) == '}') {
             addString(fileContents.get(start).substring(8, fileContents.get(start).length() - 2));
         }

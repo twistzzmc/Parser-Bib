@@ -89,8 +89,27 @@ public class Entry {
     private void checkEntry() {
         int countedCompulsoryFields = 0;
         Types types = new Types();
+        LinkedHashMap<String, FieldName> compFieldNames = types.entryTypes.get(entryType).getCompulsoryFieldNames();
 
-//        System.out.println(types);
-        System.out.println(types.entryTypes.get(entryType).getCompulsoryFieldNames().contains(new FieldName("author", true)));
+        for (Field field : fields) {
+            if (compFieldNames.containsKey(field.getKey())) {
+                countedCompulsoryFields++;
+            }
+        }
+
+        boolean authorExists = false, editorExists = false;
+        for (Author author : authors.values()) {
+            if (author.getAuthorType().equals("author"))
+                authorExists = true;
+            if (author.getAuthorType().equals("editor"))
+                editorExists = true;
+        }
+
+        if (authorExists && compFieldNames.containsKey("author"))
+            countedCompulsoryFields++;
+        if (editorExists && compFieldNames.containsKey("editor"))
+            countedCompulsoryFields++;
+
+        System.out.println(citationKey + " " + countedCompulsoryFields + " " + types.entryTypes.get(entryType).getCompulsoryFieldNamesCount());
     }
 }
