@@ -23,8 +23,6 @@ public class Entry {
         citationKey = Parser.getCitationKey(entryRaw);
         fields = Parser.getFields(entryRaw);
         this.createAuthors();
-
-        checkEntry();
     }
 
     private void createAuthors() {
@@ -86,30 +84,64 @@ public class Entry {
         return authors;
     }
 
-    private void checkEntry() {
-        int countedCompulsoryFields = 0;
-        Types types = new Types();
-        LinkedHashMap<String, FieldName> compFieldNames = types.entryTypes.get(entryType).getCompulsoryFieldNames();
+    public void checkCompulsoryFields(ArrayList<Entry> allEntries) {
+        LinkedHashMap<String, FieldName> compFieldNames = Types.entryTypes.get(entryType).getCompulsoryFieldNames();
+        LinkedHashSet<String> newCompFieldNames = new LinkedHashSet<>(compFieldNames.keySet());
+
+        String crossref = "";
 
         for (Field field : fields) {
-            if (compFieldNames.containsKey(field.getKey())) {
-                countedCompulsoryFields++;
+            removeField(compFieldNames, newCompFieldNames, field);
+
+            if (field.getKey().equals("crossref")) {
+                crossref = field.getRaw().toLowerCase();
             }
         }
 
-        boolean authorExists = false, editorExists = false;
         for (Author author : authors.values()) {
-            if (author.getAuthorType().equals("author"))
-                authorExists = true;
-            if (author.getAuthorType().equals("editor"))
-                editorExists = true;
+            removeAuthor(compFieldNames, newCompFieldNames, author);
         }
 
-        if (authorExists && compFieldNames.containsKey("author"))
-            countedCompulsoryFields++;
-        if (editorExists && compFieldNames.containsKey("editor"))
-            countedCompulsoryFields++;
+        if (!crossref.equals("")) {
+            for (Entry entry : allEntries) {
+                if (entry.getCitationKey().equals(crossref)) {
+                    for (Field field : entry.fields) {
+                        removeField(compFieldNames, newCompFieldNames, field);
+                    }
 
-        System.out.println(citationKey + " " + countedCompulsoryFields + " " + types.entryTypes.get(entryType).getCompulsoryFieldNamesCount());
+                    for (Author author : entry.authors.values()) {
+                        removeAuthor(compFieldNames, newCompFieldNames, author);
+                    }
+                }
+            }
+        }
+
+        if (!newCompFieldNames.isEmpty()) {
+            throw new IllegalArgumentException("Entry with key " + citationKey + " does not have all compulsory fields!");
+        }
+    }
+
+    private void removeField(LinkedHashMap<String, FieldName> compFieldNames, LinkedHashSet<String> newCompFieldNames, Field field) {
+        if (newCompFieldNames.contains(field.getKey())) {
+            if (compFieldNames.get(field.getKey()).name2 != null) {
+                newCompFieldNames.remove(compFieldNames.get(field.getKey()).name2);
+                newCompFieldNames.remove(compFieldNames.get(field.getKey()).name1);
+            }
+            else {
+                newCompFieldNames.remove(field.getKey());
+            }
+        }
+    }
+
+    private void removeAuthor(LinkedHashMap<String, FieldName> compFieldNames, LinkedHashSet<String> newCompFieldNames, Author author) {
+        if (newCompFieldNames.contains(author.getAuthorType())) {
+            if (compFieldNames.get(author.getAuthorType()).name2 != null) {
+                newCompFieldNames.remove(compFieldNames.get(author.getAuthorType()).name2);
+                newCompFieldNames.remove(compFieldNames.get(author.getAuthorType()).name1);
+            }
+            else {
+                newCompFieldNames.remove(author.getAuthorType());
+            }
+        }
     }
 }

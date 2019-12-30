@@ -12,17 +12,26 @@ public class SpecificEntries {
             }
         }
 
+        if (authorEntries.isEmpty())
+            System.out.println("Such authors were not found");
+
         return authorEntries;
     }
 
-    public static ArrayList<Entry> getSpecificEntryTypes(String entryType, Document document) {
+    public static ArrayList<Entry> getSpecificEntryTypes(ArrayList<String> entryType, Document document) {
         ArrayList<Entry> specificEntryTypes = new ArrayList<>();
 
         for (Entry entry : document.getFileEntries()) {
-            if (entry.getEntryType().equals(entryType)) {
-                specificEntryTypes.add(entry);
+            for (String type : entryType) {
+                if (entry.getEntryType().equals(type)) {
+                    specificEntryTypes.add(entry);
+                    break;
+                }
             }
         }
+
+        if (specificEntryTypes.isEmpty())
+            System.out.println("Such entry types were not found");
 
         return specificEntryTypes;
     }

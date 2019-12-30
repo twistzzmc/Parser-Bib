@@ -1,6 +1,5 @@
 package com.szczepaniak.bibtex;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class Types {

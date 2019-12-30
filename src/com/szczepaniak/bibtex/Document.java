@@ -1,6 +1,5 @@
 package com.szczepaniak.bibtex;
 
-import javax.print.Doc;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -17,6 +16,10 @@ public class Document {
     public Document(String path) {
         this.loadFile(path);
         fileEntries = Parser.getEntries(fileContents);
+
+        for (Entry entry : fileEntries) {
+            entry.checkCompulsoryFields(fileEntries);
+        }
     }
 
     // Reading the file and putting it in fileContents

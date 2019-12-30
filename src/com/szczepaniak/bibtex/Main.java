@@ -51,17 +51,12 @@ public class Main implements Runnable{
         // Creating new document
         Document document = new Document(path);
 
-        // If there are specific authors to look for filter the wrong ones
-        // TODO if -a or --author is given with no argument return exception
         for (String author : authors) {
             document.setFileEntries(SpecificEntries.getAuthorEntries(author, document));
         }
 
-        // If there are specific entry types to look for filter the wrong ones
-        // TODO if -t or --type is given with no argument return exceotion
-        for (String type : types) {
-            document.setFileEntries(SpecificEntries.getSpecificEntryTypes(type, document));
-        }
+        if (!types.isEmpty())
+            document.setFileEntries(SpecificEntries.getSpecificEntryTypes(types, document));
 
         //printing the filtered document
         System.out.println(document);
