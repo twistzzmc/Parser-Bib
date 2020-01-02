@@ -2,9 +2,18 @@ package com.szczepaniak.bibtex;
 
 import java.util.LinkedHashMap;
 
+/**
+ * Method containing every possible entry and field type in BibTeX
+ */
 public class Types {
+    /**
+     * Hash map whose keys are entry types and values all fields of this type
+     */
     public static final LinkedHashMap<String, FieldNames> entryTypes = new LinkedHashMap<>();
 
+    /**
+     * Constructor to put entry types and fields into the hash map
+     */
     public Types() {
         entryTypes.put("ARTICLE", new FieldNames("ARTICLE"));
         entryTypes.put("BOOK", new FieldNames("BOOK"));
@@ -19,15 +28,5 @@ public class Types {
         entryTypes.put("TECHREPORT", new FieldNames("TECHREPORT"));
         entryTypes.put("MISC", new FieldNames("MISC"));
         entryTypes.put("UNPUBLISHED", new FieldNames("UNPUBLISHED"));
-    }
-
-    @Override
-    public String toString() {
-        for (String type : entryTypes.keySet()) {
-            System.out.println("Entry type: " + type);
-            System.out.println(entryTypes.get(type) + "\n");
-        }
-
-        return "";
     }
 }

@@ -2,16 +2,44 @@ package com.szczepaniak.bibtex;
 
 import java.util.LinkedHashMap;
 
+/**
+ * Stores information abour fields of a specific entry type (used by Types class)
+ */
 public class FieldNames {
+    /**
+     * Stores all compulsory fields as hash map where the key is the field name (if it has two names then
+     * it is stored twice)
+     */
     private LinkedHashMap<String, FieldName> compulsoryFieldNames = new LinkedHashMap<>();
+
+    /**
+     * Stores all optional fields as hash map where they key is the field name (if it has two names then
+     * it is stored twice)
+     */
     private LinkedHashMap<String, FieldName> optionalFieldNames = new LinkedHashMap<>();
+
+    /**
+     * Number of all the compulsory fields (counts field with two names as one)
+     */
     private int compulsoryFieldNamesCount;
+
+    /**
+     * Number of all the optional fields (counts fields with two names as one)
+     */
     private int optionalFieldNamesCount;
 
+    /**
+     * Constructor for this class
+     * @param type type of the entry as String (it's always correct as it is created without users input)
+     */
     public FieldNames(String type) {
         createFieldNames(type);
     }
 
+    /**
+     * Helping method for constructor, it has all the optional and compulsory fields given
+     * @param type type of the entry
+     */
     private void createFieldNames(String type) {
         String compulsory = "", optional = "";
         switch (type) {
@@ -74,6 +102,12 @@ public class FieldNames {
         putInArray(optional, compulsory);
     }
 
+    /**
+     * Helping method for creating field names, parser fields and puts them in appropriate hash map
+     *
+     * @param optional all optional fields as one String that will be parsed
+     * @param compulsory all compulsory fields as one String that will be parsed
+     */
     private void putInArray(String optional, String compulsory) {
 
         if (compulsory.length() != 0) {
@@ -89,6 +123,11 @@ public class FieldNames {
         }
     }
 
+    /**
+     * Helping method for putting in array, it takes out names if there are two
+     * @param fieldName field name or names (then split by "|")
+     * @param optional information whether field is optional
+     */
     private void handleField(String fieldName, boolean optional) {
         if (fieldName.length() > 0 && !fieldName.contains("|"))
             if (!optional)
@@ -107,34 +146,11 @@ public class FieldNames {
         }
     }
 
-    public int getCompulsoryFieldNamesCount() {
-        return compulsoryFieldNamesCount;
-    }
-
-    public int getOptionalFieldNamesCount() {
-        return optionalFieldNamesCount;
-    }
-
+    /**
+     * Gets compulsory fields as hash map
+     * @return hash map of compulsory fields
+     */
     public LinkedHashMap<String, FieldName> getCompulsoryFieldNames() {
         return compulsoryFieldNames;
-    }
-
-    public LinkedHashMap<String, FieldName> getOptionalFieldNames() {
-        return optionalFieldNames;
-    }
-
-    @Override
-    public String toString() {
-        System.out.println("Compulsory count: " + compulsoryFieldNamesCount);
-        for (FieldName fieldName : compulsoryFieldNames.values()) {
-            System.out.println(fieldName);
-        }
-
-        System.out.println("Optional count: " + optionalFieldNamesCount);
-        for (FieldName fieldName : optionalFieldNames.values()) {
-            System.out.println(fieldName);
-        }
-
-        return "";
     }
 }

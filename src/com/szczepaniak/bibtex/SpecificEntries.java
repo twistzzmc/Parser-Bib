@@ -2,7 +2,16 @@ package com.szczepaniak.bibtex;
 
 import java.util.ArrayList;
 
+/**
+ * Class used for filtering wanted entries from document
+ */
 public class SpecificEntries {
+    /**
+     * Filters document entries, gets only those that have this specifically given author
+     * @param author author that entry must have
+     * @param document whole parsed document
+     * @return entries that have this author
+     */
     public static ArrayList<Entry> getAuthorEntries(String author, Document document) {
         ArrayList<Entry> authorEntries = new ArrayList<>();
 
@@ -18,6 +27,12 @@ public class SpecificEntries {
         return authorEntries;
     }
 
+    /**
+     * Filters document entries, gets all entries whose types are in array list entryType
+     * @param entryType entry types to be get
+     * @param document whole parsed document
+     * @return entries whose types user wanted
+     */
     public static ArrayList<Entry> getSpecificEntryTypes(ArrayList<String> entryType, Document document) {
         ArrayList<Entry> specificEntryTypes = new ArrayList<>();
 

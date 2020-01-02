@@ -2,7 +2,14 @@ package com.szczepaniak.bibtex;
 
 import java.util.ArrayList;
 
+/**
+ * Used only for printing entries is ASCII format as pretty table
+ */
 public class Format {
+    /**
+     * Prints entry as pretty table using ASCII
+     * @param entry entry to be printed
+     */
     static void printEntry(Entry entry) {
         int keyLength = 0, valueLength = 0;
 
@@ -70,6 +77,14 @@ public class Format {
         System.out.println(bottom + "\n");
     }
 
+    /**
+     * Helping method for printing entry's authors in new lines
+     * @param count number of authors (or editors) for this entry
+     * @param authors List of authors full names
+     * @param keyLength length of the first part of field table (length of field's keys)
+     * @param valueLength length of the second part of field table (length of field's value)
+     * @param authorType author type (author or editor)
+     */
     private static void printAuthors(int count, ArrayList<String> authors, int keyLength, int valueLength, String authorType) {
         if (count > 0) {
             String type = String.format("║ %-" + keyLength + "s", authorType) + "│";

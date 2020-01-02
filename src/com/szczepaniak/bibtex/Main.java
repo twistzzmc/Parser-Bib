@@ -33,12 +33,21 @@ import java.util.ArrayList;
 
 public class Main implements Runnable{
 
+    /**
+     * Takes path as argument
+     */
     @Option(names = {"-p", "--path"}, required = true, paramLabel = "PATH", description = "path to BibTeX file")
     private String path;
 
+    /**
+     * Takes names as argument
+     */
     @Option(names = {"-a", "--author"}, split = ",", paramLabel = "AUTHOR", description = "searching for author(s) entries")
     private ArrayList<String> authors = new ArrayList<>();
 
+    /**
+     * Takes entry types as argument
+     */
     @Option(names = {"-t", "--type"}, split = ",", paramLabel = "TYPE", description = "search for specific types of entry(s)")
     private ArrayList<String> types = new ArrayList<>();
 
@@ -48,17 +57,28 @@ public class Main implements Runnable{
 
     @Override
     public void run() {
-        // Creating new document
+        /**
+         * Creating new and parsed document
+         */
         Document document = new Document(path);
 
+        /**
+         * Filters entries with wanted authors
+         */
         for (String author : authors) {
             document.setFileEntries(SpecificEntries.getAuthorEntries(author, document));
         }
 
+        /**
+         * Filters entries with wanted types
+         */
         if (!types.isEmpty())
             document.setFileEntries(SpecificEntries.getSpecificEntryTypes(types, document));
 
-        //printing the filtered document
+
+        /**
+         * Prints document using ASCII formatting
+         */
         System.out.println(document);
     }
 }
