@@ -31,6 +31,9 @@ public class Document {
         this.loadFile(path);
         fileEntries = Parser.getEntries(fileContents);
 
+        for (Entry entry : fileEntries)
+            entry.crossrefHandle(fileEntries);
+
         for (Entry entry : fileEntries) {
             entry.checkCompulsoryFields(fileEntries);
         }
@@ -57,7 +60,7 @@ public class Document {
     @Override
     public String toString() {
         for (Entry entry : fileEntries) {
-            Format.printEntry(entry);
+            Format.printEntry(entry, fileEntries);
         }
 
         return "";

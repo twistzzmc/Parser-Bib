@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce13a1a3-b4b8-440a-846b-9e19674e307b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.bib" beforeDir="false" afterPath="$PROJECT_DIR$/example.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Document.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Format.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/szczepaniak_bibtex/com/szczepaniak/bibtex/Parser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Format.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Strings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Types.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szczepaniak_bibtex.iml" beforeDir="false" afterPath="$PROJECT_DIR$/szczepaniak_bibtex.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,92 +27,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Types.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNames.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
-              <folding>
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#5542#5543#0" expanded="true" />
-                <element signature="e#5585#5586#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1947#1948#0" expanded="true" />
-                <element signature="e#1996#1997#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Strings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding>
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
-              <caret line="127" column="43" selection-start-line="127" selection-start-column="43" selection-end-line="127" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+            <state relative-caret-position="561">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
-                <element signature="e#1665#1666#0" expanded="true" />
-                <element signature="e#1729#1730#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/DocumentTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/IntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="71" column="81" selection-start-line="71" selection-start-column="81" selection-end-line="71" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.bib">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2516">
+              <caret line="148" selection-start-line="148" selection-end-line="148" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/FieldNameTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/FieldNamesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Author.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -119,36 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-              <folding>
-                <element signature="e#2948#2949#0" expanded="true" />
-                <element signature="e#2982#2983#0" expanded="true" />
-                <element signature="e#3025#3026#0" expanded="true" />
-                <element signature="e#3054#3055#0" expanded="true" />
-                <element signature="e#3090#3091#0" expanded="true" />
-                <element signature="e#3122#3123#0" expanded="true" />
-                <element signature="e#3179#3180#0" expanded="true" />
-                <element signature="e#3209#3210#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Format.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+            <state relative-caret-position="1154">
+              <caret line="81" column="65" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -159,6 +138,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -182,6 +162,9 @@
       <find>incolle</find>
       <find>inbook</find>
       <find>whole-set</find>
+      <find>whole</find>
+      <find>GAJ</find>
+      <find>journal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,23 +177,37 @@
         <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Builders.java" />
         <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/tmpClass.java" />
         <option value="$PROJECT_DIR$/xampl.bib" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Author.java" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Entry.java" />
         <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Field.java" />
         <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldName.java" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNames.java" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Format.java" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java" />
-        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java" />
         <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Strings.java" />
         <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Types.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNameTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/FieldNameTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/FieldNameTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNames.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/FieldNamesTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/TypesTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/EntryTest.java" />
+        <option value="$PROJECT_DIR$/example.bib" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/DocumentTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Format.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/FilterTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/StringsTest.java" />
+        <option value="$PROJECT_DIR$/test.bib" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Entry.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/SpecificEntriesTest.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/bibtex/Author.java" />
+        <option value="$PROJECT_DIR$/src/com/szczepaniak/tests/IntegrationTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="458" />
+    <option name="y" value="40" />
     <option name="width" value="814" />
     <option name="height" value="867" />
   </component>
@@ -220,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -238,12 +234,27 @@
               <item name="szczepaniak_bibtex" type="b2602c69:ProjectViewProjectNode" />
               <item name="szczepaniak_bibtex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="szczepaniak" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szczepaniak_bibtex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szczepaniak_bibtex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="szczepaniak" type="462c0819:PsiDirectoryNode" />
               <item name="bibtex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szczepaniak_bibtex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szczepaniak_bibtex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="szczepaniak" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,14 +264,27 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577950338410" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578340499767" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bibtex-parser-master" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.szczepaniak.tests" />
+      <recent name="com.szczepaniak" />
+      <recent name="com.szczepaniak.bibtex" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Michal\IdeaProjects\szczepaniak_bibtex\out" />
     </key>
@@ -277,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.IntegrationTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.szczepaniak.bibtex.Main" />
       <module name="szczepaniak_bibtex" />
@@ -289,9 +313,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DocumentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="szczepaniak_bibtex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.szczepaniak.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.szczepaniak.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.szczepaniak.tests.DocumentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="szczepaniak_bibtex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.szczepaniak.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.szczepaniak.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.szczepaniak.tests.EntryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="szczepaniak_bibtex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.szczepaniak.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.szczepaniak.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.szczepaniak.tests.IntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecificEntriesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="szczepaniak_bibtex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.szczepaniak.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.szczepaniak.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.szczepaniak.tests.SpecificEntriesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.EntryTest" />
+      <item itemvalue="JUnit.DocumentTest" />
+      <item itemvalue="JUnit.SpecificEntriesTest" />
+      <item itemvalue="JUnit.IntegrationTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="JUnit.SpecificEntriesTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DocumentTest" />
+        <item itemvalue="JUnit.EntryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -315,18 +410,51 @@
       <workItem from="1577054374761" duration="2262000" />
       <workItem from="1577118590594" duration="2387000" />
       <workItem from="1577668624287" duration="7061000" />
-      <workItem from="1577942535523" duration="6618000" />
+      <workItem from="1577942535523" duration="7359000" />
+      <workItem from="1578129952797" duration="10751000" />
+      <workItem from="1578336532633" duration="4086000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 34m 07s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpecificEntriesTest - 2020.01.06 at 20h 40m 36s.xml">
+      <configuration name="SpecificEntriesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpecificEntriesTest - 2020.01.06 at 20h 40m 57s.xml">
+      <configuration name="SpecificEntriesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 42m 39s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 46m 55s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 47m 14s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 47m 25s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 47m 43s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 48m 10s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2020.01.06 at 20h 49m 35s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71951000" />
+    <option name="totallyTimeSpent" value="87529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="458" y="40" width="814" height="867" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938303" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35941646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -335,7 +463,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3243607" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32833788" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39838493" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,150 +505,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3536">
-          <caret line="208" column="20" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xampl.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="199" column="46" selection-start-line="199" selection-start-column="12" selection-end-line="199" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNameTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/FieldNameTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNames.java">
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/TypesTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Types.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
+        <state relative-caret-position="97">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/EntryTest.java" />
+    <entry file="file://$PROJECT_DIR$/example.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.6.0-M1/junit-jupiter-api-5.6.0-M1.jar!/org/junit/jupiter/api/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" />
           <folding>
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#5542#5543#0" expanded="true" />
-            <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#0#664#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Format.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+        <state relative-caret-position="272">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/FilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/FieldNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="62" column="84" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/StringsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+        <state relative-caret-position="335">
+          <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1947#1948#0" expanded="true" />
-            <element signature="e#1996#1997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xampl.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="165" column="30" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/SpecificEntriesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/FieldNameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/FieldNamesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1154">
+          <caret line="81" column="65" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="81" selection-start-line="71" selection-start-column="81" selection-end-line="71" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/tests/DocumentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Document.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="561">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1665#1666#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding>
-            <element signature="e#2948#2949#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="e#3054#3055#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
-            <element signature="e#3122#3123#0" expanded="true" />
-            <element signature="e#3179#3180#0" expanded="true" />
-            <element signature="e#3209#3210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="43" selection-start-line="127" selection-start-column="43" selection-end-line="127" selection-end-column="43" />
+        <state relative-caret-position="2516">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/SpecificEntries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/szczepaniak/bibtex/Types.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>

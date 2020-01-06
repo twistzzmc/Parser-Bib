@@ -9,13 +9,13 @@ public class SpecificEntries {
     /**
      * Filters document entries, gets only those that have this specifically given author
      * @param author author that entry must have
-     * @param document whole parsed document
+     * @param entries entries from parsed document
      * @return entries that have this author
      */
-    public static ArrayList<Entry> getAuthorEntries(String author, Document document) {
+    public static ArrayList<Entry> getAuthorEntries(String author, ArrayList<Entry> entries) {
         ArrayList<Entry> authorEntries = new ArrayList<>();
 
-        for (Entry entry : document.getFileEntries()) {
+        for (Entry entry : entries) {
             if (entry.getAuthors().containsKey(author)) {
                 authorEntries.add(entry);
             }
@@ -30,13 +30,13 @@ public class SpecificEntries {
     /**
      * Filters document entries, gets all entries whose types are in array list entryType
      * @param entryType entry types to be get
-     * @param document whole parsed document
+     * @param entries entries from parsed document
      * @return entries whose types user wanted
      */
-    public static ArrayList<Entry> getSpecificEntryTypes(ArrayList<String> entryType, Document document) {
+    public static ArrayList<Entry> getSpecificEntryTypes(ArrayList<String> entryType, ArrayList<Entry> entries) {
         ArrayList<Entry> specificEntryTypes = new ArrayList<>();
 
-        for (Entry entry : document.getFileEntries()) {
+        for (Entry entry : entries) {
             for (String type : entryType) {
                 if (entry.getEntryType().equals(type)) {
                     specificEntryTypes.add(entry);

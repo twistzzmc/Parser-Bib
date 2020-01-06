@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Main class used for parsing the document
  */
-class Parser {
+public class Parser {
     /**
      * Holds all found @Strings declarations in BibTeX file
      */
@@ -17,7 +17,7 @@ class Parser {
      * @param fileContents all lines of the document as Strings
      * @return all parsed entries
      */
-    static ArrayList<Entry> getEntries(List<String> fileContents) {
+    public static ArrayList<Entry> getEntries(List<String> fileContents) {
         ArrayList<Entry> fileEntries = new ArrayList<>();
         Types entryTypes = new Types();
 
@@ -28,11 +28,24 @@ class Parser {
                     end = i - 2;
                     fileEntries.add(new Entry(start, end, fileContents));
                 }
+                else if (start != -1 && !entryTypes.entryTypes.containsKey(getEntryType(fileContents.subList(start, fileContents.size() - 1))) && !fileContents.get(start).contains("@STRING") && !fileContents.get(start).contains("@preamble")) {
+                    throw new IllegalArgumentException("Invalid entry type " + fileContents.get(start));
+                }
                 start = i;
             }
 
             if (!fileContents.get(i).isEmpty() && fileContents.get(i).contains("@STRING")) {
                 getString(i, fileContents);
+            }
+        }
+
+        if (start != -1 && fileContents.get(start).charAt(0) == '@' && !fileContents.get(start).contains("@STRING")) {
+            if (entryTypes.entryTypes.containsKey(getEntryType(fileContents.subList(start, fileContents.size() - 1)))) {
+                end = fileContents.size() - 1;
+                fileEntries.add(new Entry(start, end, fileContents));
+            }
+            else if (!entryTypes.entryTypes.containsKey(getEntryType(fileContents.subList(start, fileContents.size() - 1))) && !fileContents.get(start).contains("@STRING") && !fileContents.get(start).contains("@preamble")) {
+                throw new IllegalArgumentException("Invalid entry type " + fileContents.get(start));
             }
         }
 

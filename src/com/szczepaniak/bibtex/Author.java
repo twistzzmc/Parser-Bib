@@ -25,6 +25,19 @@ public class Author {
     }
 
     /**
+     * Helping method to get last name from full name
+     * @param fullName full name of the author
+     * @return last name of the author
+     */
+    public static String getLastName(String fullName) {
+        String [] names = fullName.split(" ");
+        for (String name : names)
+            name.trim();
+
+        return names[names.length - 1];
+    }
+
+    /**
      * Get author's type
      * @return author's type
      */

@@ -66,14 +66,14 @@ public class Main implements Runnable{
          * Filters entries with wanted authors
          */
         for (String author : authors) {
-            document.setFileEntries(SpecificEntries.getAuthorEntries(author, document));
+            document.setFileEntries(SpecificEntries.getAuthorEntries(author, document.getFileEntries()));
         }
 
         /**
          * Filters entries with wanted types
          */
         if (!types.isEmpty())
-            document.setFileEntries(SpecificEntries.getSpecificEntryTypes(types, document));
+            document.setFileEntries(SpecificEntries.getSpecificEntryTypes(types, document.getFileEntries()));
 
 
         /**

@@ -1,6 +1,7 @@
 package com.szczepaniak.bibtex;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 /**
  * Used only for printing entries is ASCII format as pretty table
@@ -10,7 +11,7 @@ public class Format {
      * Prints entry as pretty table using ASCII
      * @param entry entry to be printed
      */
-    static void printEntry(Entry entry) {
+    static void printEntry(Entry entry, ArrayList<Entry> fileEntries) {
         int keyLength = 0, valueLength = 0;
 
         int nameLength = entry.getCitationKey().length() + entry.getEntryType().length() + 5;
@@ -25,9 +26,6 @@ public class Format {
         ArrayList<String> editorsNames = new ArrayList<>();
 
         for (Author author : entry.getAuthors().values()) {
-            valueLength = Math.max(valueLength, author.getName().length());
-            keyLength = Math.max(keyLength, author.getAuthorType().length());
-
             if (author.getAuthorType().equals("author")) {
                 authorsNumber += 1;
                 authorsNames.add(author.getName());
@@ -36,6 +34,9 @@ public class Format {
                 editorsNumber += 1;
                 editorsNames.add(author.getName());
             }
+
+            valueLength = Math.max(valueLength, author.getName().length());
+            keyLength = Math.max(keyLength, author.getAuthorType().length());
         }
 
         if (nameLength > keyLength + valueLength)
@@ -45,17 +46,20 @@ public class Format {
         valueLength += 1;
         int totalLength = keyLength + valueLength + 3;
 
-        StringBuilder top = new StringBuilder(), middle = new StringBuilder(), bottom = new StringBuilder();
+        StringBuilder top = new StringBuilder(), middle = new StringBuilder(), bottom = new StringBuilder(), pause = new StringBuilder();
         top.append('╔');
         middle.append('║');
+        pause.append('║');
         bottom.append('╚');
         for (int i = 1; i <= totalLength; i++) {
             top.append('═');
             middle.append('═');
             bottom.append('═');
+            pause.append('─');
         }
         top.append('╗');
         middle.append('║');
+        pause.append('║');
         bottom.append('╝');
 
 
@@ -66,14 +70,21 @@ public class Format {
 
         System.out.println(middle);
 
-        printAuthors(authorsNumber, authorsNames, keyLength, valueLength, "author");
-        printAuthors(editorsNumber, editorsNames, keyLength, valueLength, "editor");
+        printAuthors(authorsNumber, authorsNames, keyLength, valueLength, "author", pause);
+        printAuthors(editorsNumber, editorsNames, keyLength, valueLength, "editor", pause);
 
+        boolean first = true;
         for (Field field : entry.getFields()) {
-            String fieldKey = String.format("║ %-" + keyLength + "s", field.getKey()) + "│";
+            if (first)
+                first = false;
+            else
+                System.out.println(pause);
+
             String fieldRaw = String.format(" %-" + valueLength + "s", field.getRaw()) + "║";
+            String fieldKey = String.format("║ %-" + keyLength + "s", field.getKey()) + "│";
             System.out.println(fieldKey + fieldRaw);
         }
+
         System.out.println(bottom + "\n");
     }
 
@@ -85,7 +96,7 @@ public class Format {
      * @param valueLength length of the second part of field table (length of field's value)
      * @param authorType author type (author or editor)
      */
-    private static void printAuthors(int count, ArrayList<String> authors, int keyLength, int valueLength, String authorType) {
+    private static void printAuthors(int count, ArrayList<String> authors, int keyLength, int valueLength, String authorType, StringBuilder pause) {
         if (count > 0) {
             String type = String.format("║ %-" + keyLength + "s", authorType) + "│";
             type += String.format(" • %-" + (valueLength - 2) + "s", authors.remove(0)) + "║";
@@ -96,6 +107,8 @@ public class Format {
                 authorString += String.format(" • %-" + (valueLength - 2) + "s", authorName) + "║";
                 System.out.println(authorString);
             }
+
+            System.out.println(pause);
         }
     }
 }

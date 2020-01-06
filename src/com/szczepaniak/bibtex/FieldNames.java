@@ -3,7 +3,7 @@ package com.szczepaniak.bibtex;
 import java.util.LinkedHashMap;
 
 /**
- * Stores information abour fields of a specific entry type (used by Types class)
+ * Stores information about fields of a specific entry type (used by Types class)
  */
 public class FieldNames {
     /**

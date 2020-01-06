@@ -79,7 +79,7 @@ public class Entry {
                     String [] newAuthors = newLine.split("and");
                     for (String author : newAuthors) {
                         author = author.trim();
-                        authors.put(author, new Author(author, field));
+                        authors.put(Author.getLastName(author), new Author(author, field));
                     }
                 }
             }
@@ -129,32 +129,12 @@ public class Entry {
         LinkedHashMap<String, FieldName> compFieldNames = Types.entryTypes.get(entryType).getCompulsoryFieldNames();
         LinkedHashSet<String> newCompFieldNames = new LinkedHashSet<>(compFieldNames.keySet());
 
-        String crossref = "";
-
         for (Field field : fields) {
             removeField(compFieldNames, newCompFieldNames, field);
-
-            if (field.getKey().equals("crossref")) {
-                crossref = field.getRaw().toLowerCase();
-            }
         }
 
         for (Author author : authors.values()) {
             removeAuthor(compFieldNames, newCompFieldNames, author);
-        }
-
-        if (!crossref.equals("")) {
-            for (Entry entry : allEntries) {
-                if (entry.getCitationKey().equals(crossref)) {
-                    for (Field field : entry.fields) {
-                        removeField(compFieldNames, newCompFieldNames, field);
-                    }
-
-                    for (Author author : entry.authors.values()) {
-                        removeAuthor(compFieldNames, newCompFieldNames, author);
-                    }
-                }
-            }
         }
 
         if (!newCompFieldNames.isEmpty()) {
@@ -197,6 +177,39 @@ public class Entry {
             }
             else {
                 newCompFieldNames.remove(author.getAuthorType());
+            }
+        }
+    }
+
+    /**
+     * Adding crossref fields and authors to entry with crossref
+     *
+     * @param fileEntries all entries required to look for appropriate entry
+     */
+    public void crossrefHandle(ArrayList<Entry> fileEntries) {
+        for (Field field : this.getFields()) {
+            if (field.getKey().equals("crossref")) {
+                for (Entry ent : fileEntries) {
+                    if (ent.getCitationKey().equals(field.getRaw().toLowerCase())) {
+                        if (this.getAuthors().isEmpty()) {
+                            authors = ent.getAuthors();
+                        }
+
+                        for (Field crossField : ent.getFields()) {
+                            boolean used = false;
+                            for (Field crossCheckField : this.getFields()) {
+                                if (crossCheckField.getKey().equals(crossField.getKey())) {
+                                    used = true;
+                                }
+                            }
+
+                            if (!used) {
+                                fields.add(crossField);
+                            }
+                        }
+                    }
+                }
+                break;
             }
         }
     }
